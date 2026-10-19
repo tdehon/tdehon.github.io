@@ -3,41 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentions légales – Atelier Rayon</title>
-  <link rel="stylesheet" href="style.css">
+
+  <title>Mentions légales — Nom de la praticienne</title>
+
+  <meta
+    name="description"
+    content="Mentions légales du site."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="logo" href="index.html"><span aria-hidden="true"></span>Atelier Rayon</a>
-      <nav aria-label="Navigation principale">
-        <ul><li><a href="index.html">Accueil</a></li></ul>
-      </nav>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Nom de la praticienne">
+    </a>
+
+    <a class="text-link" href="index.html">Retour à l'accueil</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <div class="container prose">
+
+      <span class="eyebrow">Informations légales</span>
+
+      <h1>Mentions légales</h1>
+
+      <h2>Éditeur du site</h2>
+
+      <p>
+        Nom professionnel : À compléter<br>
+        Forme juridique : À compléter, si applicable<br>
+        Adresse professionnelle : À compléter selon les obligations applicables<br>
+        Numéro d'entreprise : À compléter, si applicable<br>
+        E-mail : À compléter
+      </p>
+
+      <h2>Responsable de publication</h2>
+
+      <p>À compléter.</p>
+
+      <h2>Hébergement</h2>
+
+      <p>
+        Le site est hébergé par GitHub Pages.
+        L'hébergeur et les coordonnées juridiques applicables
+        devront être vérifiés avant publication.
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+
+      <p>
+        Les textes, photographies, logo et autres éléments du site
+        sont soumis aux droits applicables. Les autorisations nécessaires
+        doivent être obtenues avant leur publication.
+      </p>
+
+      <h2>Données personnelles</h2>
+
+      <p>
+        Cette section devra préciser les traitements de données
+        réellement effectués sur le site, les éventuels services tiers
+        utilisés et les modalités d'exercice des droits applicables.
+      </p>
+
+      <h2>Cookies et services externes</h2>
+
+      <p>
+        Les éventuels cookies et services externes devront être
+        documentés selon leur fonctionnement réel et les obligations
+        applicables.
+      </p>
+
+      <p class="small-text">
+        Ce modèle ne constitue pas un avis juridique.
+        Les informations et obligations applicables doivent être vérifiées
+        avant la mise en ligne.
+      </p>
+
     </div>
-  </header>
+  </section>
 
-  <main class="wrap text-page">
-    <h1>Mentions légales</h1>
+</main>
 
-    <h2>Éditeur du site</h2>
-    <p>Atelier Rayon SRL<br>
-       Rue de l’Exemple 12, 4000 Liège, Belgique<br>
-       Numéro d’entreprise (BCE) : 0000.000.000<br>
-       TVA : BE 0000.000.000<br>
-       E-mail : <a href="mailto:contact@atelier-rayon.be">contact@atelier-rayon.be</a> – Tél. : +32 4 00 00 00 00</p>
-
-    <h2>Hébergement</h2>
-    <p>GitHub Pages – GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
-
-    <h2>Données personnelles</h2>
-    <p>Ce site ne dépose aucun cookie et n’utilise aucun outil de suivi. Les données que vous nous envoyez par e-mail servent uniquement à répondre à votre demande et ne sont jamais transmises à des tiers. Vous pouvez demander leur suppression à tout moment à l’adresse ci-dessus.</p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 Atelier Rayon SRL – BCE 0000.000.000</span>
-      <a href="index.html">Retour à l’accueil</a>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span data-current-year>2026</span> Nom de la praticienne</span>
+      <a href="index.html">Accueil</a>
     </div>
-  </footer>
+  </div>
+</footer>
+
+<script>
+  document.querySelector("[data-current-year]").textContent =
+    new Date().getFullYear();
+</script>
+
 </body>
 </html>
