@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Prendre rendez-vous — Nom de la praticienne</title>
+
+  <meta
+    name="description"
+    content="Préparez votre rendez-vous et accédez au calendrier de réservation."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Nom de la praticienne">
+    </a>
+
+    <div class="header-actions">
+      <div class="language-switch" aria-label="Choisir la langue">
+        <a href="reservation.html" aria-current="page">FR</a>
+        <span aria-hidden="true">/</span>
+        <a href="en/reservation.html" lang="en">EN</a>
+      </div>
+
+      <button class="menu-toggle"
+              type="button"
+              data-menu-toggle
+              aria-expanded="false"
+              aria-controls="main-navigation"
+              aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="primary-nav"
+         id="main-navigation"
+         data-navigation
+         aria-label="Navigation principale">
+      <ul>
+        <li><a href="massages.html">Les massages</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="reservation.html" aria-current="page">Réserver</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section section--large">
+    <div class="container">
+
+      <div class="booking-panel">
+
+        <span class="eyebrow">Prendre rendez-vous</span>
+
+        <h1>Votre moment commence ici.</h1>
+
+        <p class="lead">
+          Choisissez la prestation qui vous correspond, puis consultez
+          les créneaux disponibles dans le calendrier de réservation.
+        </p>
+
+        <h2>Avant de réserver</h2>
+
+        <p>
+          Prenez quelques instants pour consulter les descriptions
+          et les tarifs des massages. Vous pourrez ensuite choisir
+          le rendez-vous adapté à vos attentes.
+        </p>
+
+        <p>
+          Si vous avez une question avant de réserver, vous pouvez
+          contacter directement la praticienne.
+        </p>
+
+        <div class="button-group">
+
+          <!-- REMPLACER L'URL PAR LE LIEN CALENDLY RÉEL -->
+
+          <a
+            class="button"
+            href="https://calendly.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ouvrir le calendrier
+          </a>
+
+          <a class="button button--outline" href="massages.html">
+            Revoir les massages
+          </a>
+
+        </div>
+
+        <p class="small-text" style="margin-top:1.5rem">
+          Le lien actuel est un exemple. Remplace-le par l'adresse
+          de réservation réelle avant publication.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span data-current-year>2026</span> Nom de la praticienne</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelector("[data-current-year]").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
