@@ -1,20 +1,20 @@
 :root {
-  --bg: #f4f6f5;
-  --surface: #ffffff;
-  --ink: #1e2a2f;
-  --muted: #5b676d;
-  --line: #d5dbd8;
-  --signal: #f2c230;
-  --signal-ink: #1e2a2f;
+  --bg: #f6f0e9;
+  --surface: #fdfaf6;
+  --ink: #3b2e25;
+  --muted: #735f50;
+  --line: #e3d6c8;
+  --signal: #c9a27e;
+  --signal-ink: #3b2e25;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #151b1e;
-    --surface: #1d2529;
-    --ink: #e9ecea;
-    --muted: #9aa5aa;
-    --line: #2f3a3f;
+    --bg: #2a221d;
+    --surface: #342a24;
+    --ink: #f1e8de;
+    --muted: #bfae9e;
+    --line: #4a3d34;
     color-scheme: dark;
   }
 }
