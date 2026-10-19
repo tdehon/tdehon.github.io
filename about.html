@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>À propos — Nom de la praticienne</title>
+
+  <meta
+    name="description"
+    content="Découvrez l'approche professionnelle, la philosophie et l'univers de la praticienne."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Nom de la praticienne">
+    </a>
+
+    <div class="header-actions">
+      <div class="language-switch" aria-label="Choisir la langue">
+        <a href="about.html" aria-current="page">FR</a>
+        <span aria-hidden="true">/</span>
+        <a href="en/about.html" lang="en">EN</a>
+      </div>
+
+      <button class="menu-toggle"
+              type="button"
+              data-menu-toggle
+              aria-expanded="false"
+              aria-controls="main-navigation"
+              aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="primary-nav"
+         id="main-navigation"
+         data-navigation
+         aria-label="Navigation principale">
+      <ul>
+        <li><a href="massages.html">Les massages</a></li>
+        <li><a href="about.html" aria-current="page">À propos</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="reservation.html">Réserver</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">À propos</span>
+      <h1>Une approche attentive et personnelle.</h1>
+      <p class="lead">
+        Découvrez la philosophie, l'approche professionnelle et
+        l'univers qui accompagnent chaque séance.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container hero-grid">
+
+      <div class="hero-image">
+        <img
+          src="images/portrait.jpg"
+          alt="Portrait professionnel de la praticienne"
+          width="900"
+          height="1100"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">Une rencontre</span>
+
+        <h2>Le temps d'être pleinement présent.</h2>
+
+        <p>
+          Le massage offre un moment pour ralentir et porter attention
+          à ses sensations, dans un cadre respectueux et accueillant.
+        </p>
+
+        <p>
+          Cette section pourra raconter l'approche de la praticienne,
+          les valeurs qui guident son travail et ce qu'elle souhaite
+          offrir aux personnes qu'elle reçoit.
+        </p>
+
+        <p>
+          Seules les informations professionnelles qu'elle souhaite
+          rendre publiques seront ajoutées ici.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">La philosophie</span>
+        <h2>Trois principes essentiels.</h2>
+      </div>
+
+      <div class="card-grid card-grid--three">
+
+        <article class="card">
+          <h3>Écouter</h3>
+          <p>
+            Comprendre les attentes et respecter les préférences
+            exprimées avant la séance.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Adapter</h3>
+          <p>
+            Proposer une expérience cohérente avec les besoins
+            et les limites de chacun.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Respecter</h3>
+          <p>
+            Créer un cadre où les limites, le confort et le consentement
+            restent essentiels.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+
+      <h2>Découvrir les prestations</h2>
+
+      <p class="lead">
+        Prenez le temps de découvrir les différentes approches
+        avant de choisir votre séance.
+      </p>
+
+      <a class="button" href="massages.html">
+        Voir les massages
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span data-current-year>2026</span> Nom de la praticienne</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelector("[data-current-year]").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
