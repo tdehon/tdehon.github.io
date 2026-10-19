@@ -1,0 +1,94 @@
+:root {
+  --bg: #f4f6f5;
+  --surface: #ffffff;
+  --ink: #1e2a2f;
+  --muted: #5b676d;
+  --line: #d5dbd8;
+  --signal: #f2c230;
+  --signal-ink: #1e2a2f;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151b1e;
+    --surface: #1d2529;
+    --ink: #e9ecea;
+    --muted: #9aa5aa;
+    --line: #2f3a3f;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* En-tête */
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap;
+}
+.logo { font-weight: 800; font-size: 1.2rem; text-decoration: none; letter-spacing: -0.01em; }
+.logo span { display: inline-block; width: 0.7em; height: 0.7em; background: var(--signal); border-radius: 50%; margin-right: 0.4em; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.25rem; }
+nav a { text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--ink); }
+
+/* Accroche */
+.hero { padding: 4.5rem 0 3.5rem; }
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.05; letter-spacing: -0.03em; font-weight: 800;
+  margin: 0 0 1.25rem; max-width: 16ch;
+  border-left: 0.35rem solid var(--signal); padding-left: 1rem;
+}
+.hero p { color: var(--muted); max-width: 52ch; margin: 0 0 2rem; font-size: 1.15rem; }
+.button {
+  display: inline-block; background: var(--signal); color: var(--signal-ink);
+  font-weight: 700; text-decoration: none; padding: 0.8rem 1.4rem; border-radius: 0.4rem;
+}
+.button:hover { filter: brightness(0.95); }
+
+/* Sections */
+section { padding: 3rem 0; border-top: 1px solid var(--line); }
+h2 { font-size: 1.6rem; letter-spacing: -0.02em; margin: 0 0 1.5rem; }
+.intro { color: var(--muted); max-width: 60ch; margin-top: -0.75rem; }
+
+/* Tarifs */
+.prices { list-style: none; margin: 0; padding: 0; max-width: 40rem; }
+.prices li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 0.85rem 0; border-bottom: 1px dashed var(--line);
+}
+.prices small { display: block; color: var(--muted); font-size: 0.9rem; }
+.prices strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* Infos pratiques */
+.grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.grid h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.grid p, .grid dl { margin: 0; color: var(--muted); }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 1rem; }
+dt { color: var(--ink); }
+dd { margin: 0; }
+
+/* Pages de texte (mentions légales) */
+.text-page { padding: 3rem 0; max-width: 46rem; }
+.text-page h1 { font-size: 2rem; letter-spacing: -0.02em; }
+.text-page h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+
+/* Pied de page */
+.site-footer { border-top: 1px solid var(--line); padding: 2rem 0; color: var(--muted); font-size: 0.9rem; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
